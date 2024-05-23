@@ -13,7 +13,7 @@ from routes.liaison_bp import *
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = 'ahcestgang'
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://default:VfXQ8iymq9HM@ep-lively-morning-a4ukm3yw.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://default:VfXQ8iymq9HM@ep-lively-morning-a4ukm3yw-pooler.us-east-1.aws.neon.tech:5432/verceldb"
 app.config['SQLACHEMY_TRACK_MODIFICATION'] = False
 db.init_app(app)
 
