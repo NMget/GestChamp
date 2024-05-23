@@ -1,6 +1,4 @@
 Flask==3.0.0
-flask_bootstrap
-flask_mail
 flask_sqlalchemy
 flask_wtf
 wtforms
