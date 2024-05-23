@@ -3,6 +3,4 @@ flask_bootstrap
 flask_mail
 flask_sqlalchemy
 flask_wtf
-flask_wtf.file
 wtforms
-wtforms.validators
