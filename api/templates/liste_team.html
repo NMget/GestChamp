@@ -1,0 +1,30 @@
+<table id="customers">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Logo</th>
+            <th>Nom</th>
+            <th>Poule(s)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for team_data in teams_dict.values() %}
+        <tr>
+            
+            <td>{{ team_data['team'].id }}</td>
+            <td><img src="/static/{{ team_data['team'].photo }}" class="logo"></td>
+            <td>{{ team_data['team'].name }}</td>
+            
+            <td>
+                {% for poule in team_data['poules'] %}
+                {{ poule.name }}
+                {% endfor %}
+            </td>
+            
+            <td><a href="{{url_for('team_bp.addJoueur', team = team_data['team'].id)}}">Ajouter un joueur</a></td>
+        </tr>
+        {% endfor %}
+
+    </tbody>
+</table>

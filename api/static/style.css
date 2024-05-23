@@ -1,0 +1,136 @@
+@font-face {
+    font-family: "font 1";
+    src: url(./assets/JosefinSans-Regular.ttf);
+}
+@font-face {
+    font-family: "font 2";
+    src: url(./assets/AlumniSansCollegiateOne-Italic.ttf);
+}
+*{
+    text-decoration: none;
+    font-family: "font 1";
+    margin: 0%;
+    padding: 0%;
+}
+
+a{
+    color: inherit;
+}
+body{
+    background-color: rgb(70, 70, 70);
+    background-image: url(/static/images/vb_bg.png) ;
+    background-repeat: no-repeat ;
+    background-position-x: right;
+    background-size: 60ch;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    border-start-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-start-start-radius: 10%;
+    border-end-end-radius: 10%;
+    background-color: aliceblue;
+}
+#entete, #menu, #contenu, #footer {
+    padding: 0px;
+    margin: 0px;
+}
+H1 {
+    padding: 1.2%;
+    background-color:#1b1b1b;
+    color: darkorange;
+    text-align:center;
+    font-size: xx-large;
+    border-bottom: darkorange solid 7px;
+}
+#main {
+    margin:1%;
+    position: relative;
+}
+#menu  {
+    width:235px;
+    background-color:#616161;
+    position: absolute;
+    border-right: solid 10px;
+    height: 230px;
+    
+}
+#menu ul{
+    padding-top: 10%;
+    padding-left: 5%;
+}
+#menu li{
+    padding: 6%;
+    list-style: none;
+}
+#menu li a{
+    text-decoration: none;
+    background: #1b1b1b;
+    border: solid; 
+    border-start-end-radius: 10px;
+    border-end-start-radius: 10px;
+    padding: 2%;
+    padding-right: 10px;
+    color: darkorange;
+    height: 100%;
+    
+}
+#menu li a:hover{
+    color: #1b1b1b;
+    background: darkorange;
+}
+#contenu {
+    margin-left:245px;
+    height: 100%;
+}
+#footer {
+    background-color:darkorange;
+    text-align:center;
+    clear:both;
+    padding: 10px;
+    position: absolute;
+    bottom: 0%;
+    width: 99%;
+    text-align: right;
+}
+form{
+    margin: auto;
+}
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin-left: 1%;
+    background-color: rgb(117, 117, 117);
+    width: 50%;
+    color: black;
+} 
+#customers td{
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+#customers tr:nth-child(even){
+    background-color: rgb(70, 70, 70);
+    color: black;
+}
+#customers tr:hover {
+    background-color: #272727;
+    color: darkorange;
+}
+#customers tr a{
+    text-decoration: underline;
+}
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: darkorange;
+    color: black;
+}
+#sous-titre{
+    background-color: whitesmoke;
+    padding: 1%;
+    text-align: center;
+}
+

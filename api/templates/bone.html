@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/static/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <div id="entete">
+        <h1>Gestionnaire de championnat</h1>
+        <div id="sous-titre">
+            <h2>{{ title }}</h2>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="menu">
+            <ul>
+                <li><a href="{{url_for('team_bp.create')}}">Créer une équipe</a></li>
+                <li><a href="{{url_for('poule_bp.create')}}">Créer une poule</a></li>
+                <li><a href="{{url_for('poule_bp.liste')}}">Liste des poules</a></li>
+                <li><a href="{{url_for('team_bp.liste')}}">Liste des équipes</a></li>
+            </ul>
+        </div>
+
+        <div id="contenu">
+            {% include content %}
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <p>Nitchh Industries</p>
+    </div>
+</body>
+</html>

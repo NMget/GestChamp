@@ -1,0 +1,43 @@
+
+<body>
+    <table id="customers">
+        <thead>
+            <tr>
+                <th></th>
+                <th>logo</th>
+                <th>nom</th>
+                <th>points</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for liaison in liaisons %}
+            <tr>
+                <td>{{ loop.index }}</td>
+                <td><img src="/static/{{ team.query.filter_by(id = liaison.id_team).first().photo }}" class="logo"></td>
+                <td>{{ team.query.filter_by(id = liaison.id_team).first().name }}</td>
+                <td>{{ liaison.points }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <table id="customers">
+        <thead>
+            <tr>
+                <th>Equipe 1</th>
+                <th>Equipe 2</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for match in matchs %}
+            <tr>
+                <td><a href="{{url_for('poule_bp.resMatch', match = match.id, team = match.id_team1)}}">{{ team.query.filter_by(id = match.id_team1).first().name }}</a></td>
+                <td><a href="{{url_for('poule_bp.resMatch', match = match.id, team = match.id_team2)}}">{{ team.query.filter_by(id = match.id_team2).first().name }}</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <form action="{{url_for('poule_bp.match', name=poule.name)}}">
+        <button type="submit">creer match</button>
+    </form>
+</body>

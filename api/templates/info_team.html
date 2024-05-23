@@ -1,0 +1,19 @@
+<table id="customers">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Prenom</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for joueur in joueurs %}
+        <tr>
+            <td>{{ joueur.id }}</td>
+            <td>{{ joueur.nom }}</td>
+            <td>{{ joueur.prenom }}</td>
+        </tr>
+        {% endfor %}
+
+    </tbody>
+</table>

@@ -1,0 +1,19 @@
+<table id="customers">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for poule in poules %}
+        <tr>
+            <td>{{ poule.id }}</td>
+            <td><a href="{{url_for('poule_bp.res', name = poule.name)}}">{{ poule.name }}</a></td>
+            <td><a href="{{url_for('liaison_bp.ajouter', id_poule = poule.id)}}">Ajouter une team</a></td>
+        </tr>
+        {% endfor %}
+
+    </tbody>
+</table>
