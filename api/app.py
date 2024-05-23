@@ -24,8 +24,8 @@ app.register_blueprint(team_bp, url_prefix='/team')
 
 @app.route("/")
 def index():
-    return redirect(url_for('poule_bp.liste'))
+    return 'oui baguette'
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
+    app.run(debug=True)
