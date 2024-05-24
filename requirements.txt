@@ -15,4 +15,4 @@ bcrypt==4.0.1
 setuptools>=40.0.0
 flask_sqlalchemy
 flask_bcrypt
-psycopg2
+Flask-Psycopg2
