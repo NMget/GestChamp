@@ -1,6 +1,6 @@
 from flask import Blueprint
 
-from controllers.teamController import *
+from api.controllers.teamController import *
 
 team_bp = Blueprint('team_bp',__name__)
 
