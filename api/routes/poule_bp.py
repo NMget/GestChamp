@@ -1,6 +1,6 @@
 from flask import Blueprint
 
-from controllers.pouleController import *
+from api.controllers.pouleController import *
 
 poule_bp = Blueprint('poule_bp',__name__)
 
