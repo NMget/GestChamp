@@ -4,7 +4,7 @@ from flask_wtf.file import FileAllowed, FileField
 from wtforms import SubmitField, StringField, HiddenField
 from wtforms.validators import InputRequired
 
-from models.models import *
+from api.models.models import *
 
 class UploadForm(FlaskForm):
     id_filed = HiddenField()
