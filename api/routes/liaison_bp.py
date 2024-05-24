@@ -1,6 +1,6 @@
 from flask import Blueprint
 
-from controllers.liaisonController import *
+from api.controllers.liaisonController import *
 
 liaison_bp = Blueprint('liaison_bp',__name__)
 
