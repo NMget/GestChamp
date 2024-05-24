@@ -2,13 +2,13 @@ from flask import Flask, request, render_template, redirect, url_for
 from flask_wtf import FlaskForm
 from flask_wtf.file import FileField, FileAllowed
 
-from models.models import *
-from controllers.pouleController import *
-from routes.poule_bp import *
-from controllers.teamController import *
-from routes.team_bp import *
-from controllers.liaisonController import *
-from routes.liaison_bp import *
+from api.models.models import *
+from api.controllers.pouleController import *
+from api.routes.poule_bp import *
+from api.controllers.teamController import *
+from api.routes.team_bp import *
+from api.controllers.liaisonController import *
+from api.routes.liaison_bp import *
 
 app = Flask(__name__)
 
