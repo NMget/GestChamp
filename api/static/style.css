@@ -134,3 +134,70 @@ form{
     text-align: center;
 }
 
+
+/* Styles généraux pour le formulaire */
+.create {
+    max-width: 500px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid darkorange;
+    border-radius: 10px;
+    background-color: #1b1b1b;
+}
+
+/* Style pour chaque champ de formulaire */
+.create .form-group {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    background-color: darkorange;
+}
+
+.create select,
+.create input[type="text"],
+.create input[type="password"],
+.create input[type="email"],
+.create textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid darkorange;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Style pour le bouton submit */
+.create input[type="submit"],
+.create button[type="submit"] {
+    background-color: darkorange;
+    color: #1b1b1b;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.create input[type="submit"]:hover,
+.create button[type="submit"]:hover {
+    background-color: #272727;
+    color: darkorange;
+}
+
+/* Style pour les messages d'erreur */
+.create .error {
+    color: red;
+    font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .create {
+        padding: 15px;
+    }
+}
+
