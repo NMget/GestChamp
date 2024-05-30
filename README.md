@@ -124,6 +124,4 @@ Ce projet est sous licence MIT. Veuillez consulter le fichier LICENSE pour plus 
 - [MEGNET Noah](https://github.com/NMget)
 
 Merci d'utiliser notre application de gestion de tournoi de volley !
-```
 
-Assurez-vous d'adapter les URLs et les informations spécifiques à votre projet et votre environnement.
