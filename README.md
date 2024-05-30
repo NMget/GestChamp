@@ -1,6 +1,6 @@
-Voici un exemple de `README.md` pour votre projet de gestion de tournoi de volley :
 
-```markdown
+
+
 # Gestion de Tournoi de Volley
 
 Cette application web permet de gérer les tournois de volley de manière efficace. Elle offre des fonctionnalités de création de poules, de joueurs et d'équipes, de génération automatique de planning de match et de classement automatique des équipes suivant leur nombre de points.
