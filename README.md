@@ -31,8 +31,8 @@ Cette application web permet de gérer les tournois de volley de manière effica
 
 1. Clonez le dépôt :
    ```bash
-   git clone https://github.com/votre-utilisateur/gestion-tournoi-volley.git
-   cd gestion-tournoi-volley
+   git clone https://github.com/NMget/GestChamp.git
+   cd GestChamp
    ```
 
 2. Créez un environnement virtuel et activez-le :
@@ -48,7 +48,7 @@ Cette application web permet de gérer les tournois de volley de manière effica
 
 4. Configurez la base de données PostgreSQL :
    - Créez une base de données `volley_tournament`.
-   - Mettez à jour l'URI de la base de données dans `config.py` :
+   - Mettez à jour l'URI de la base de données dans `app.py` :
      ```python
      SQLALCHEMY_DATABASE_URI = 'postgresql://username:password@localhost:5432/volley_tournament'
      ```
@@ -121,7 +121,7 @@ Ce projet est sous licence MIT. Veuillez consulter le fichier LICENSE pour plus 
 
 ## Auteurs
 
-- [Votre Nom](https://github.com/votre-utilisateur)
+- [MEGNET Noah](https://github.com/NMget)
 
 Merci d'utiliser notre application de gestion de tournoi de volley !
 ```
