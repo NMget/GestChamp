@@ -46,4 +46,4 @@ Le format est basé sur [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ## Auteurs
 
-- [Votre Nom](https://github.com/NMget)
+- [MEGNET Noah](https://github.com/NMget)
